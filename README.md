@@ -1,45 +1,46 @@
-# Weapon Detection using YOLOv8
+# 🎯 Weapon Detection with YOLOv8 🛡️
 
-This project demonstrates the process of weapon detection using the YOLOv8 (You Only Look Once) object detection model. It involves training a YOLOv8 model on a custom dataset consisting of various types of weapons and running inference on test images to detect these weapons in real-time.
+Empowering intelligent object detection for enhanced security and analysis.
 
 ![image](https://github.com/user-attachments/assets/c0ea93ac-1653-4aeb-8d73-1c7bef392da8)
 
 
-The project utilizes the `Ultralytics YOLOv8` package, which simplifies the process of building and deploying object detection models.
+## 🚀 Project Overview
 
-## Table of Contents
+This project leverages the cutting-edge YOLOv8 object detection model to accurately identify and localize various weapons within images and GIF sequences. By training on a custom dataset tailored for weapon recognition, we achieve robust detection capabilities, crucial for applications ranging from security surveillance to content analysis.
 
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Dataset](#dataset)
-- [Training](#training)
-- [Inference](#inference)
-- [Results](#results)
-- [License](#license)
+## 🛠️ Key Functionalities
 
-## Project Overview
+* **Custom Dataset Handling:** Streamlined data preparation using `data.yaml` to define dataset paths and class labels.
+* **Efficient YOLOv8 Training:** Optimized model training with `ultralytics` for rapid and accurate learning.
+* **Real-time Inference:** Swift weapon detection on images and GIFs with clear visualization of bounding boxes and class labels.
+* **Visual Output:** Clear and concise display of detection results using `result.show()`.
 
-The goal of this project is to train a YOLOv8 model for detecting nine types of weapons in images. The weapons included in the dataset are:
+## ⚙️ Workflow
 
-- Automatic Rifle
-- Bazooka
-- Grenade Launcher
-- Handgun
-- Knife
-- Shotgun
-- SMG
-- Sniper
-- Sword
+1.  **Dataset Configuration:**
+    * Creation of `data.yaml` to specify training, validation paths, and class details.
+2.  **Model Training:**
+    * Installation of `ultralytics` for YOLOv8 integration.
+    * Execution of `yolo` command to train the YOLOv8s model with defined parameters.
+3.  **Inference and Visualization:**
+    * Loading the trained model from `/kaggle/working/runs/detect/train/weights/best.pt`.
+    * Iterating through test images and GIFs for detection.
+    * Displaying results with bounding boxes and class labels.
 
-After training the model, the weapon detection model is tested on a set of images and the detected objects are visualized.
+## 📊 Results
 
-## Installation
+The YOLOv8 model demonstrates high accuracy in detecting weapons, providing:
 
-To get started with the project, first install the required dependencies.
+* Precise bounding box localization.
+* Accurate class labeling.
+* Effective visualization of detection results.
 
-### 1. Install Ultralytics YOLOv8
+## 💻 Tech Stack
 
-YOLOv8 is available through the `ultralytics` Python package. To install it, run:
+* **Python:** Core programming language.
+* **PyTorch:** Deep learning framework.
+* **Ultralytics (YOLOv8):** State-of-the-art object detection.
+* **PIL (Python Imaging Library):** Image processing.
 
-```bash
-pip install ultralytics
+## 📁 Project Structure
